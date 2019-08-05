@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src='assets/load-html/load.js'></script>
+    </head>
+    <body>
+        <form>
+            <header>
+            </header>
+            <div class="name"><img src="assets/img/Room_logo.png" style="width:140px;"></div>
+            <div class="container">
+                
+                <h3>Login</h3>
+                <span style="color:red;font-size:12px;"id="user-error"> </span>
+                <input type="text" placeholder="User ID" id="username"  class="myInput" name="uname" required>
+                <span style="color:red;font-size:12px;"id="password-error"> </span>
+                <input type="password" placeholder="Password" id="password"  class="myInput" name="pswd" required>
+                <div align="center"> <button type="button" id="user_authentication" class="btn btn-danger "><a>Login</a></button>
+                <div style="color:red;font-size:12px;text-align: center;padding-top:10px"; id="invalid-user-pass"> </div>
+            </div>
+            
+        </div>
+        <!-- <footer></footer> -->
+        <div id="footer"></div>
+    </form>
+    <script src='scripts/navigation.js'></script>
+    <script src='scripts/api/api.js'></script>
+    <script src='scripts/api/auth.js'></script>
+    <script src='scripts/controller/user-login.js'></script>
+    <script>
+        $(document).ready(() => {
+            Nav.init(window.location.href);
+        });
+    </script>
+    
+</body>
+</html>
